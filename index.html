@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaIrCaRe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo111.png" alt="logo" width="115px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="termekek.html">Termékek</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                        <li><a href="fiok.html">Fiók</a></li>
+                    </ul>
+                </nav>
+                <a href="kosar.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>A legjobb férfi hajápolási termékek! <br>Válaszd a HaIrCaRet!</h1>
+                    <p>Igazi parfümöt tartalmazó termékek, a legjobb eredményért <br>orvosok által bevizsgált anyagok.</p>
+                    <a href="products.html" class="btn">Mutasd &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/logo111.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <h2 class="title">Legújabb termékek</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="hajhab.html"><img src="images/hajhab.png"></a>
+                <h4>Hajhab</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>6000Ft</p>
+            </div>
+            <div class="col-4">
+                <a href="hajolaj.html"></a><img src="images/hajolaj.png">
+                <h4>Hajolaj</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>7000Ft</p>
+            </div>
+            <div class="col-4">
+                <a href="hajpor.html"></a><img src="images/hajpor.png">
+                <h4>Hajpor</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>7500Ft</p>
+            </div>
+            <div class="col-4">
+                <a href="hajwax.html"> <img src="images/hajwax.png">
+                <h4>Hajwax</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>8900Ft</p>
+            </div>
+        </div>
+
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <a href="hajwax.html"></a><img src="images/hajwax.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Prémium minőségű termék</p>
+                    <h1>Haj wax</h1>
+                    <small>A Hair2000 kóddal, 2000Ft kedvezményt biztosítunk.<br></small>
+                    <a href="hajwax.html" class="btn">Vásárlás &#8594;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Nagyon jó termékek vannak, mindenkinek ajánlom!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="">
+                    <h3>Kiss Norbert</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Az eddigi legjobb választásom volt ez a hajpor.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/hajpor.png">
+                    <h3>Makó Nándor</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Kiválló férfi parfüm illata van ennek a hajolalnak!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/hajolaj.png">
+                    <h3>Don Juan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <h1> Partner cégek</h1>
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/douglas.png">
+                    <a href=" https://www.douglas.hu/">Douglas oldala</a>
+                </div>
+                <div class="col-5">
+                    <img src="images/notino.png">
+                    <a href="https://www.notino.hu/">Notino oldala</a>
+
+                </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Töltsd le az applikációnkat</h3>
+                    <p>HAMAROSAN</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo111.png">
+                    <p>A legjobb választás, ha szereti a haját.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                </div>
+                <div class="footer-col-4">
+                    <h3>Kövess minket</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Minden jog fenntartva 2024 - Huczek Kevin</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "300px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
