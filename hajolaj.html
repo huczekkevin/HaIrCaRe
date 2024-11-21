@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Összes termék HaIrCaRe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo111.png" alt="logo" width="115px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="termekek.html">Termékek</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                    <li><a href="fiok.html">Fiók</a></li>
+                </ul>
+            </nav>
+            <a href="kosar.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/hajolaj.png" width="100%" id="ProductImg">
+
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>HaIrCaRe</p>
+                <h1>Hajolaj</h1>
+                <h4>7000Ft</h4>
+                <select>
+                    <option>Haj méret</option>
+                    <option>Rövid</option>
+                    <option>Hosszú</option>
+                    <option>Közepes</option>
+                </select>
+                <input type="number" value="1">
+                <a href="vasarlas.html" class="btn">Vásárlás</a>
+
+                <h3>Termék információk <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>A prémium termékek és szolgáltatások választása nem csupán a minőség biztosítékát jelenti, hanem a kifinomult ízlés és a kiváló élmény iránti elköteleződést is.</p>
+            </div>
+        </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Töltsd le az applikációnkat</h3>
+                <p>HAMAROSAN</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo111.png">
+                <p>A legjobb választás, ha szereti a haját.
+                </p>
+            </div>
+            <div class="footer-col-3">
+            </div>
+            <div class="footer-col-4">
+                <h3>Kövess minket</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Minden jog fenntartva 2024 - Huczek Kevin</p>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "300px"
+        }
+        else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+    </script>
+</body>
+
+</html>
