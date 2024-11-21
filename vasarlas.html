@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+    
+<head>
+
+
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Főoldal</a></li>
+                        <li><a href="termekek.html">Termékek</a></li>
+                        <li><a href="rolunk.html">Rólunk</a></li>
+                        <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                        <li><a href="fiok.html">Fiók</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendelés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("buying.avif"); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            width: 400px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .paypal-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .paypal-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Rendelés kitöltése</h1>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Cím:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="email">Telefonszám:</label>
+            <input type="phone" id="phone" name="phone" required>
+            
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="huczekkevin@gmail.com"> 
+            <input type="hidden" name="item_name" value="Rendelés">
+            <input type="hidden" name="amount" value="0.00"> 
+            <input type="hidden" name="currency_code" value="HUF">
+            
+            <button type="submit" class="paypal-button">Rendelés elküldése a PayPal-ra</button>
+        </form>
+    </div>
+
+
+
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Töltsd le az applikációnkat</h3>
+                <p>HAMAROSAN</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo111.png">
+                <p>A legjobb választás, ha szereti a haját.
+                </p>
+            </div>
+            <div class="footer-col-3">
+            </div>
+            <div class="footer-col-4">
+                <h3>Kövess minket</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Minden jog fenntartva 2024 - Huczek Kevin</p>
+    </div>
+</div>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "300px"
+        }
+        else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+    </script>
+</body>
+</html>
